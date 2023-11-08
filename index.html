@@ -8,20 +8,23 @@
     
     <!-- Titilo del Portfolio -->
     <title>Pusho.Dev | Portfolio</title>
+    <link rel="shortcut icon" href="/assets/imgs/favicon.ico" type="image/x-icon">
     
     <!-- boxicon css link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Estilos personales -->
-    <link rel="stylesheet" href="/assets/css/style_0.css">
+    <link rel="stylesheet" href="/assets/css/estilos_pushodev.css">
+    <link rel="stylesheet" href="/assets/css/barra_lateral.css">
+    
 
 </head>
 <body>
     <!-- Encabezados del Cuerpo -->
     <div class="overlay"></div>
     <header>
-        <a href="#" class="logo"><span>P</span>usho</a>
+        <a href="#" class="logo"><span>&lt;P</span>usho.<span>D</span>ev<span>/&gt;</span></a>
         <ul class="navlist">
             <li><a href="#home" class="active">Portada</a></li>
             <li><a href="#about">Acerca de mi</a></li>
@@ -39,17 +42,40 @@
         </div>
     </header>
 
+    <!-- Barra Container -->
+    <div class="container-bar">
+	<input type="checkbox" id="btn-social">
+	<label for="btn-social" class="fa fa-play"></label>
+		<div class="icon-social">
+			<a href="#" class="bx bxl-facebook" style='color: #3b5998;'>
+				<span id="title" style="color: white;">Facebook</span>
+			</a>
+			<a href="#" class="bx bxl-youtube" style="color: #e52a23;">
+				<span id="title" style="color: white;">Youtube</span>
+			</a>
+			<a href="https://twitter.com/luisguisado1990" class="bx bxl-twitter" style="color: #00acee;">
+				<span id="title" style="color: white;">Twitter</span>
+			</a>
+			<a href="https://github.com/LuffyCubans" class="bx bxl-github" style="color: #e52a23;">
+				<span id="title" style="color: white;">Github</span>
+			</a>
+			<a href="#" class="bx bxl-linkedin" style="color: #319af0;">
+				<span id="title" style="color: white;">LinkedIn</span>
+			</a>
+		</div>
+	</div>
+
     <!-- Section de Portada -->
     <section class="home" id="home">
         <div class="hero-info">
             <h3>Bienvenidos a mi Portfolio</h3>
-            <h2>Hola mi nombre es Luis A. Guisado</h2>
+            <h2>Hola 👋, mi nombre es Luis A. Guisado </h2>
 
             <div class="text-animate">
                 <h2>Desarrollador UI/UX</h2>
             </div>
 
-            <p>Soy ✨ Desarrollador de Software ✨ aunque me considero JUNIOR tengo experiencia (+5 AÑOS). Un apasionado del desarrollo, a encontrar soluciones inmediatas a problemas Informáticos.</p>
+            <p>Soy ✨ Desarrollador de Software ✨ aunque me considero JUNIOR con Conocimientos UI/UX. Obtengo en el ámbito del desarrollo (+3 AÑOS). Un apasionado del desarrollo, a encontrar soluciones inmediatas a problemas Informáticos.</p>
 
             <div class="btn-box">
                 <a href="mailto:richard@mail.com" class="btn">Correo Ahora! <i class='bx bx-right-arrow-alt' ></i></a>
@@ -88,10 +114,464 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Section Acerca de mi -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/assets/imgs/illustration.png" alt="" class="aboutHero">            
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Acerca de Mi</h2>
+            <h3>+5 Años de Experience on Product Design</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint voluptatem autem ex in. Temporibus et maiores ipsum recusandae voluptas consequatur!</p>
+            <div class="about-btn">
+                <button class="active">Main Skills</button>
+                <button>Awards</button>
+                <button>Educación</button>
+            </div>
+            <div class="content-btn">
+                <div class="content">
+                    <div class="text-box">
+                    <p>User Experience Design - UI / UX</p>
+                    <span>Delight the user and make it work.</span>
+                </div>
+                <div class="text-box">
+                    <p>Web & User Interface Design - Development</p>
+                    <span>Website , Web Experience , ...</span>
+                </div>
+                <div class="text-box">
+                    <p>Interaction Desing - Animation</p>
+                    <span>I Like to move it move it</span>
+                </div>
+                </div>
+
+                <div class="content">
+                    <div class="text-box">
+                    <p>Web Design Award</p>
+                    <span>Award for creativity and user experience.</span>
+                </div>
+                <div class="text-box">
+                    <p>Code and Development Award</p>
+                    <span>Exceptional coding skills and develoment techniques</span>
+                </div>
+                <div class="text-box">
+                    <p>Hackathons and coding Competiotions</p>
+                    <span>Participating in hackathons and coding.</span>
+                </div>
+                </div>
 
 
+                <div class="content">
+                    <div class="text-box">
+                    <p>Online Courses and Bootcamps</p>
+                    <span>Delight the user and make it work.</span>
+                </div>
+                <div class="text-box">
+                    <p>Internships and Work Experience</p>
+                    <span>Website , Web Experience , ...</span>
+                </div>
+                <div class="text-box">
+                    <p>Bachelor's Degree in Computer Science</p>
+                    <span>I Like to move it move it</span>
+                </div>
+                </div>
+            </div>
+            <div class="cvContent">
+                <a href="/assets/documents/resume.pdf" target="_blank" class="btn d-CV">Descargar CV <i class='bx bx-download'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Servicios -->
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">Mis Servicios</h2>
+            <span>what i will do for you</span>
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer' ></i>
+                    <span></span>
+                </div>
+                <h3>App Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt' ></i>
+                    <span></span>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop' ></i>
+                    <span></span>
+                </div>
+                <h3>UI / UX Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bxs-party' ></i>
+                    <span></span>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+        </div>
+
+        <div class="proposal">
+            <div class="text-box">
+                <span>Get It Touch</span>
+                <h3>Have a Project On Your Mind</h3>
+                <a href="#contact" class="btn"><i class="bx bxl-whatsapp"></i> Contactar Conmigo</a>
+            </div>
+            <img src="/assets/imgs/support.png" class="first">
+        </div>
+        
+    </section>
+
+    <!-- Section Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="main-text">
+            <h2 class="heading">Portfolio</h2>
+            <span>what i will do for you</span>
+        </div>
+        <div class="fillter-buttons">
+            <button class="button mixitup-control-active" data-filter="all">All Work</button>
+            <button class="button" data-filter=".web">Web Development</button>
+            <button class="button" data-filter=".uiux">UI/UX Design</button>
+            <button class="button" data-filter=".branding">Branding Design</button>
+        </div>
+
+        <div class="portfolio-gallery">
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/3.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="portfolio-box mix web">
+                <div class="portfolio-content">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/4.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix uiux">
+                <div class="portfolio-content">
+                    <h3>UI/UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/5.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="portfolio-box mix branding">
+                <div class="portfolio-content">
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, soluta.</p>
+                    <a href="#" class="readMore">Explore More</a>
+                </div>
+                <div class="portfolio-img">
+                    <img src="img/portfolio/6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Section Blog extraido de Blogger -->
+    <section class="blog" id="blog">
+        <div class="main-text">
+            <h2 class="heading">Blog</h2>
+            <span>Latest News & Post</span>
+        </div>
+
+        <div class="blog-box swiper mySwiper">
+            <div class="cards swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/1.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/2.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/3.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/4.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/5.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+                <div class="card swiper-slide">
+                    <div class="card-top">
+                        <img src="img/blog/6.jpg" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h2>Mobile App Landing Page</h2>
+                        <span class="date">Sunday, Jan 14, 2023</span>
+                        <p class="excerpt">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, illo.
+                        </p>
+                        <a href="#" class="readMore">Explore More</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+        <div class="showcase">
+            <img src="shapes/ring.png" class="ring">
+            <img src="shapes/second-circle.png" class="second-circle">
+            <img src="shapes/circle.png" class="circle">
+            <img src="shapes/half-ring.png" class="half-ring">
+        </div>
+
+    </section>
+
+    <!-- Section Contacto -->
+    <section class="down-box" id="contact">
+        <div class="contactSkills">
+            <div class="contact-info">
+                <div class="main-text">
+                    <h2 class="heading">Contactarme</h2>
+                    <span>get in touch with me</span>
+                </div>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="#" id="" cols="30" rows="10">
+                    </textarea>
+                    <div class="formBtn">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="skills">
+                <div class="container">
+                    <div class="skillBox">
+                        <div class="main-text">
+                            <h2 class="heading">My Skills</h2>
+                            <span>Let Me Help you</span>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="89">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    HTML
+                                </div>
+                            </div>
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="47">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    CSS
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="56">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    JavaScript
+                                </div>
+                            </div>
+
+
+                            <div class="skill">
+                                <div class="outer-circle">
+                                    <div class="inner-circle">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
+                                            <defs>
+                                                <linearGradient id="GradientColor">
+                                                <stop offset="0%" stop-color="#e91e63" />
+                                                <stop offset="100%" stop-color="#673ab7" />
+                                                </linearGradient>
+                                            </defs>
+                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
+                                       </svg>
+                                       <h2 class="counter">
+                                        <span data-target="19">0</span>%
+                                       </h2>
+                                    </div>
+                                </div>
+                                <div class="sk-title">
+                                    UI/UX Design
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     
+    
+
+    <!-- Footer Base del Proyecto -->
+    <footer>
+        <p>Copyright © 2023 by <span>Luis A. Guisado </span> || All Right Reserved.</p>
+    </footer>
+
+    <!-- Progreso en la web -->
+    <div id="progress">
+        <span id="progress-value">
+            <i class='bx bxs-chevrons-up' ></i>
+        </span>
+    </div>
 
     <!-- ===================== -->
     <!-- Elementos Java Script -->
@@ -103,7 +583,8 @@
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- mixitup cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="/assets/js/script_0.js"></script>
+    <script src="/assets/js/script_pushodev.js"></script>
+    <script src="/assets/js/script_1.js"></script>
     
 </body>
 </html>

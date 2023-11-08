@@ -148,7 +148,7 @@ let calcScrollValue = ()=>{
         document.documentElement.scrollTop = 0;
     });
 
-    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#044e1d ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;

@@ -1,3 +1,4 @@
+/* GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
 
@@ -10,12 +11,12 @@
 }
 
 :root{
-    --bg-color:#043b75;
-    --gradient-white-bg:linear-gradient(0deg,#302e2e 0%,#464b50 51%,#383b3d 100%);
-    --gradient-color-bg:linear-gradient(180deg,rgb(1, 247, 63)0%,
-                                                rgb(8, 160, 59)51%,
-                                                rgb(13, 178, 87)100%);
-    --main-color:#0017e6;
+    --bg-color:#cadfdf;
+    --gradient-white-bg:linear-gradient(0deg,#899691 0%,#a5aaaa 51%,#90a0a1 100%);
+    --gradient-color-bg:linear-gradient(180deg,rgb(1, 169, 247)0%,
+                                                rgb(8, 117, 160)51%,
+                                                rgb(13, 126, 178)100%);
+    --main-color:#006be6;
     --font-color:#90979f;
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
                        rgba(0,0,0,0.23)0px 6px 6px;     
@@ -24,7 +25,7 @@
 
 a{
     text-decoration: none;
-    color: #fffefe;
+    color: #ffffff;
 }
 
 body{
@@ -173,7 +174,7 @@ section{
     font-weight: 700;
     margin-bottom: 1rem;
     color: transparent;
-    -webkit-text-stroke: 0.1vw #077736;
+    -webkit-text-stroke: 0.1vw #075477;
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -304,7 +305,7 @@ section{
     position: relative;
     width: 442px;
     height: 442px;
-    background: red;
+    background: blue;
     border: 6px solid #eaeef0;
     border-radius: 50%;
     z-index: 1;
