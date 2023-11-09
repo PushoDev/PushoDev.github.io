@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Estilos personales -->
     <link rel="stylesheet" href="/assets/css/estilos_pushodev.css">
-    <link rel="stylesheet" href="/assets/css/barra_lateral.css">
-    
+    <!-- Enlace a particles.js desde CDN -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/assets/js/script_particles.js"></script>
+
+  
 
 </head>
 <body>
@@ -42,31 +45,13 @@
         </div>
     </header>
 
-    <!-- Barra Container -->
-    <div class="container-bar">
-	<input type="checkbox" id="btn-social">
-	<label for="btn-social" class="fa fa-play"></label>
-		<div class="icon-social">
-			<a href="#" class="bx bxl-facebook" style='color: #3b5998;'>
-				<span id="title" style="color: white;">Facebook</span>
-			</a>
-			<a href="#" class="bx bxl-youtube" style="color: #e52a23;">
-				<span id="title" style="color: white;">Youtube</span>
-			</a>
-			<a href="https://twitter.com/luisguisado1990" class="bx bxl-twitter" style="color: #00acee;">
-				<span id="title" style="color: white;">Twitter</span>
-			</a>
-			<a href="https://github.com/LuffyCubans" class="bx bxl-github" style="color: #e52a23;">
-				<span id="title" style="color: white;">Github</span>
-			</a>
-			<a href="#" class="bx bxl-linkedin" style="color: #319af0;">
-				<span id="title" style="color: white;">LinkedIn</span>
-			</a>
-		</div>
-	</div>
+    
 
     <!-- Section de Portada -->
     <section class="home" id="home">
+
+        <div id="particles"></div>
+
         <div class="hero-info">
             <h3>Bienvenidos a mi Portfolio</h3>
             <h2>Hola 👋, mi nombre es Luis A. Guisado </h2>
@@ -103,6 +88,8 @@
                     <span></span>
                 </div>
             </div>
+            <center><a href="#about" class="scroll"><i style="color: black" class='bx bxs-down-arrow'></i></a></center>
+            
         </div>
         <div class="img-hero">
             <img src="/assets/imgs/hero.png" alt="">
@@ -112,7 +99,7 @@
                 </div>
                 <span><i></i></span>
             </div>
-        </div>
+        </div>        
     </section>
 
     <!-- Section Acerca de mi -->
@@ -562,7 +549,7 @@
     
 
     <!-- Footer Base del Proyecto -->
-    <footer>
+    <footer class="footerpusho">
         <p>Copyright © 2023 by <span>Luis A. Guisado </span> || All Right Reserved.</p>
     </footer>
 
@@ -583,8 +570,11 @@
      <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- mixitup cdn js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <!-- Particulas -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="/assets/js/script_pushodev.js"></script>
-    <script src="/assets/js/script_1.js"></script>
+    <script src="/assets/js/script_particles.js"></script>
+    
     
 </body>
 </html>

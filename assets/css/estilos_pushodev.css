@@ -20,7 +20,7 @@
     --font-color:#90979f;
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
                        rgba(0,0,0,0.23)0px 6px 6px;     
-    --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#fff 100%);                                                          
+    --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#ffffff 70%);                                                          
 }
 
 a{
@@ -138,15 +138,26 @@ section{
     padding: 90px 8%;
 }
 
-.home{
+.home{    
     min-height: 100vh;
     height: 100%;
     width: 100%;
     display: flex;
+    justify-content: center;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4em;
     background: var(--gradient-white-bg2);
+    z-index: 1;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Asegura que esté detrás del contenido */
 }
 
 .hero-info{
@@ -942,10 +953,12 @@ h2.counter span{
 
 /*======================= footer ============================ */
 footer{
+    background-color: #a5aaaa;
     text-align: center;
+    font-style: var(--font-color);    
     margin: 0 8%;
     padding: 2rem 0;
-    border-top: 2px solid #e8e1e1;
+    border-top: 2px solid #04608b;
 }
 
 
