@@ -15,11 +15,20 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <!-- Estilos personales -->
-    <link rel="stylesheet" href="/assets/css/estilos_pushodev.css">
-    <link rel="stylesheet" href="/assets/css/skill.css">
+    <link rel="stylesheet" href="/assets/css/estilos_pushodev.css">>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+    
     <!-- Enlace a particles.js desde CDN -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/assets/js/script_particles.js"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1PWGHS8967');
+    </script>
 
   
 
@@ -32,13 +41,14 @@
         <ul class="navlist">
             <li><a href="#home" class="active">Portada</a></li>
             <li><a href="#about">Acerca de mi</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#services">Servicios</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
         <div class="right-header">
-            <a href="https://github.com/PushoDev" class="btn"><i class='bx bxl-github' ></i></a>
+            <a href="https://github.com/PushoDev" class="btn"><i class='uil uil-github' ></i></a>
             <a href="https://puschoft.blogspot.com" class="btn"><i class='bx bxl-blogger'></i></a>
             <div class="menu-icon">
                 <div class="bar"></div>
@@ -54,19 +64,30 @@
         <div id="particles"></div>
 
         <div class="hero-info">
-            <h3>Bienvenidos a mi Portfolio</h3>
-            <h2>Hola 👋, mi nombre es Luis A. Guisado </h2>
+            <h3 style="color: beige;">Bienvenidos a mi Portfolio</h3>
+            <h2 style="color: aliceblue;">Hola 👋, mi nombre es Luis A. Guisado </h2>
 
             <div class="text-animate">
                 <h2>Desarrollador UI/UX</h2>
             </div>
 
-            <p>Soy ✨ Desarrollador de Software ✨ aunque me considero JUNIOR con Conocimientos UI/UX. Obtengo en el ámbito del desarrollo (+3 AÑOS). Un apasionado del desarrollo, a encontrar soluciones inmediatas a problemas Informáticos.</p>
+            <p style="color: bisque;">Soy ✨ Desarrollador de Software ✨ aunque me considero JUNIOR con conocimientos UI/UX. Ya obtengo en el ámbito del desarrollo (+3 AÑOS) de experiencia. Soy un apasionado al desarrollo y a encontrar soluciones inmediatas a problemas Informáticos.</p>
 
             <div class="btn-box">
                 <a href="mailto:richard@mail.com" class="btn">Correo Ahora! <i class='bx bx-right-arrow-alt' ></i></a>
                 <a href="/assets/documents/Curriculum_Luis A Guisado.pdf" target="_blank" class="btn d-CV">Descargar CV <i class='bx bx-download'></i></a>
             </div>
+
+            <center>
+                <div class="home__scroll">
+                    <a href="#about" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Continuar</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </center>
+            
 
             
             
@@ -151,80 +172,21 @@
         </div>
     </section>
 
-    <!-- Section Servicios -->
-    <section class="services" id="services">
-        <div class="main-text">
-            <h2 class="heading">Mis Servicios</h2>
-            <span>what i will do for you</span>
-        </div>
-
-        <div class="allServices">
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-layer' ></i>
-                    <span></span>
-                </div>
-                <h3>App Development</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-code-alt' ></i>
-                    <span></span>
-                </div>
-                <h3>Web Development</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bx-desktop' ></i>
-                    <span></span>
-                </div>
-                <h3>UI / UX Design</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-
-            <div class="servicesItem">
-                <div class="icon-services">
-                    <i class='bx bxs-party' ></i>
-                    <span></span>
-                </div>
-                <h3>Digital Marketing</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
-                <a href="#" class="readMore">Read More</a>
-            </div>
-        </div>
-
-        <div class="proposal">
-            <div class="text-box">
-                <span>Get It Touch</span>
-                <h3>Have a Project On Your Mind</h3>
-                <a href="#contact" class="btn"><i class="bx bxl-whatsapp"></i> Contactar Conmigo</a>
-            </div>
-            <img src="/assets/imgs/support.png" class="first">
-        </div>
-        
-    </section>
-
-    <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section__title">Skills</h2>
-                <span class="section__subtitle">My technical level</span>
+    <!-- Section Skills -->
+    <main class="main" id="main">
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Niveles Técnicos</span>
 
                 <div class="skills__container container grid">
                     <div>
-                        <!--==================== SKILL 1 ====================-->
+                        <!--==================== Desarrollo ====================-->
                         <div class="skills__content skills__open">
                             <div class="skills__header">
                                 <i class="uil uil-brackets-curly skills__icon"></i>
                                 <div>
-                                    <h1 class="skills__title">Development</h1>
-                                    <span class="skills__subtitle">All about the core..</span>
+                                    <h1 class="skills__title">Desarrollo</h1>
+                                    <span class="skills__subtitle">Lenguajes</span>
                                 </div>
                                 <i class="uil uil-angle-down skills__arrow"></i>
                             </div>
@@ -242,7 +204,7 @@
 
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Java</h3>
+                                        <h3 class="skills__name">PHP</h3>
                                         <span class="skills__number">60%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -291,7 +253,142 @@
                                 </div>
                             </div>
                         </div>
-                        <!--==================== SKILL 2 ====================-->
+                        <!--==================== Framework ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-server-network skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Frameworks</h1>
+                                    <span class="skills__subtitle">Everyone needs support</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Laravel</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__np"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">pandas</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pd"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Codeigniter</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__plt"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Django</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sk"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">seaborn</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sea"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">OpenCV</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__cv"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Flask</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__flask"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Streamlit</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__streamlit"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">TensorFlow</h3>
+                                        <span class="skills__number">85%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__tf"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">PyTorch</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__pytorch"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">NLTK</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ntlk"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Trax</h3>
+                                        <span class="skills__number">40%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__trax"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== SKILL 3 ====================-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
                                 <i class="uil uil-server-network skills__icon"></i>
@@ -629,7 +726,70 @@
                     </div>
                 </div>
             </section>
+    </main>
 
+
+    <!-- Section Servicios -->
+    <section class="services" id="services">
+        <div class="main-text">
+            <h2 class="heading">Mis Servicios</h2>
+            <span>what i will do for you</span>
+        </div>
+
+        <div class="allServices">
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-layer' ></i>
+                    <span></span>
+                </div>
+                <h3>App Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-code-alt' ></i>
+                    <span></span>
+                </div>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bx-desktop' ></i>
+                    <span></span>
+                </div>
+                <h3>UI / UX Design</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+
+            <div class="servicesItem">
+                <div class="icon-services">
+                    <i class='bx bxs-party' ></i>
+                    <span></span>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure inventore ea nemo ab recusandae modi voluptates maxime ipsam eveniet. Facilis.</p>
+                <a href="#" class="readMore">Read More</a>
+            </div>
+        </div>
+
+        <div class="proposal">
+            <div class="text-box">
+                <span>Get It Touch</span>
+                <h3>Have a Project On Your Mind</h3>
+                <a href="#contact" class="btn"><i class="bx bxl-whatsapp"></i> Contactar Conmigo</a>
+            </div>
+            <img src="/assets/imgs/support.png" class="first">
+        </div>
+        
+    </section>
+
+    
     <!-- Section Portfolio -->
     <section class="portfolio" id="portfolio">
         <div class="main-text">
@@ -822,130 +982,64 @@
     </section>
 
     <!-- Section Contacto -->
-    <section class="down-box" id="contact">
-        <div class="contactSkills">
-            <div class="contact-info">
-                <div class="main-text">
-                    <h2 class="heading">Contactarme</h2>
-                    <span>get in touch with me</span>
-                </div>
-                <form action="#">
-                    <div class="input-box">
-                        <input type="text" placeholder="First Name">
-                        <input type="text" placeholder="Last Name">
-                    </div>
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea name="#" id="" cols="30" rows="10">
-                    </textarea>
-                    <div class="formBtn">
-                        <button type="submit" class="btn">Send Message</button>
-                    </div>
-                </form>
-            </div>
-            <div class="skills">
-                <div class="container">
-                    <div class="skillBox">
-                        <div class="main-text">
-                            <h2 class="heading">My Skills</h2>
-                            <span>Let Me Help you</span>
+    <div class="main">
+        <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Phone</h3>
+                                <span class="contact__subtitle">+33 626-323-290</span>
+                            </div>
                         </div>
-                        <div class="skill-wrap">
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="89">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    HTML
-                                </div>
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">E-mail</h3>
+                                <span class="contact__subtitle">yassine.rodani@gmail.com</span>
                             </div>
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="47">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    CSS
-                                </div>
-                            </div>
-
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="56">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    JavaScript
-                                </div>
-                            </div>
-
-
-                            <div class="skill">
-                                <div class="outer-circle">
-                                    <div class="inner-circle">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="180px" height="180px">
-                                            <defs>
-                                                <linearGradient id="GradientColor">
-                                                <stop offset="0%" stop-color="#e91e63" />
-                                                <stop offset="100%" stop-color="#673ab7" />
-                                                </linearGradient>
-                                            </defs>
-                                                <circle cx="85" cy="85" r="75" stroke-linecap="round" />
-                                       </svg>
-                                       <h2 class="counter">
-                                        <span data-target="19">0</span>%
-                                       </h2>
-                                    </div>
-                                </div>
-                                <div class="sk-title">
-                                    UI/UX Design
-                                </div>
+                        </div>
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Strasbourg - France</span>
                             </div>
                         </div>
                     </div>
+
+                    <form action="https://formspree.io/f/mnqrawen" method="POST" class="contact__form grid" id="my-form">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" id="name" name="name" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">E-mail</label>
+                                <input type="email" id="email" name="email" class="contact__input" required>
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Message</label>
+                                <textarea id="message" name="message" cols="0" rows="6" class="contact__input"
+                                    required></textarea>
+                            </div>
+                            <div class="contact__submit">
+                                <div>
+                                    <input type="submit" value="Send message" class="button button--flex"
+                                        id="contact__button">
+                                </div>
+                                <div id="contact__status"></div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+    </div>
     
     
 
@@ -953,6 +1047,11 @@
     <footer class="footerpusho">
         <p>Copyright © 2023 by <span>Luis A. Guisado </span> || All Right Reserved.</p>
     </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+        <a href="#home" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
 
     <!-- Progreso en la web -->
     <div id="progress">
@@ -975,6 +1074,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="/assets/js/script_pushodev.js"></script>
     <script src="/assets/js/script_particles.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/scrollreveal.min.js"></script>
+    <script src="/assets/js/swiper-bundle.min.js"></script>
     
     
 </body>
