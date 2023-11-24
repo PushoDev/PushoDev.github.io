@@ -10,6 +10,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root{
     --bg-color:#cadfdf;
     --gradient-white-bg:linear-gradient(0deg,#899691 0%,#a5aaaa 51%,#90a0a1 100%);
@@ -20,7 +24,65 @@
     --font-color:#90979f;
     --hover-box-shadow:rgba(0,0,0,0.19)0px 10px 20px,
                        rgba(0,0,0,0.23)0px 6px 6px;     
-    --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#ffffff 70%);                                                          
+    --gradient-white-bg2:linear-gradient(98deg,#e5eef7 0%,#ffffff 70%); 
+
+    /* Agregados Nuevos */
+    --header-height: 3rem;
+
+
+  /*========== Colors ==========*/
+  /* Change theme color */
+  --hue-color: 202;
+  /*Purple 250 - Green 142 - Blue 202 - Pink 340*/
+
+  /* HSL color mode */
+  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --first-color-second: hsl(var(--hue-color), 69%, 61%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --input-color: hsl(var(--hue-color), 70%, 96%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+  --container-color: #fff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Bottom margins ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+
+    
+    
 }
 
 a{
@@ -29,6 +91,7 @@ a{
 }
 
 body{
+    margin: 0 0 var(--header-height) 0;
     font-family: 'Poppins', sans-serif;
     background: var(--bg-color);
     overflow-x: hidden;
@@ -61,6 +124,7 @@ span{
 
 ul.navlist{
     display: flex;
+
 }
 
 .navlist li{
@@ -138,7 +202,10 @@ section{
     padding: 90px 8%;
 }
 
-.home{    
+.home{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), 
+    url(/assets/imgs/Portada-Pu-Schoft-Blogger.jpg);    
+    background-size: cover;    
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -147,8 +214,9 @@ section{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     grid-gap: 4em;
-    background: var(--gradient-white-bg2);
+    animation: rotate 6s infinite alternate linear;
     z-index: 1;
+    
 }
 
 #particles {
@@ -453,6 +521,8 @@ section{
 .cvContent{
     margin-top: 1.5rem;
 }
+
+
 
 /* ==================== Services section css code ============================ */
 .services{
@@ -964,7 +1034,7 @@ footer{
 
 #progress{
     position: fixed;
-    /* background: #194eb9; */
+    background: #194eb9;
     z-index: 1000;
     bottom: 60px;
     right: 10px;
